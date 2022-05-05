@@ -9,14 +9,27 @@ function updateRate() {
     document.getElementById("rate_val").innerText=rateval;
 }
 
-function compute() {
-    p = document.getElementById("principal").value;
-    addEventListener("click", () => {
-        document.getElementById("rate_val").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
-
-    })
+// function compute() {
+//     p = document.getElementById("principal").value;
+//     const computeButton = document.querySelector(".compute-interest")
+//     computeButton.addEventListener("click", () => {
+//         document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+//     })
     
-}
+// }
 
+function compute() {
+    document.getElementById("result").innerHTML = `If you deposit <mark>${principal}</mark>,\<br\>at an interest rate of ${rate} %\<br\>You will receive an amount of ${amount},\<br\>in the year ${year} \<br\>`;
+};
 
-        
+function myFunction() {
+    // Get the value of the input field with id="numb"
+    let validatePrincipal = document.getElementById("principal").value;
+    // If x is Not a Number or less than one or greater than 10
+    let text;
+    if (isNaN(x) || x < 1) {
+      alert("Enter a positive number");
+    } else {
+      text = "Input OK";
+    }
+  }
